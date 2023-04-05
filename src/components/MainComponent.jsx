@@ -57,12 +57,12 @@ const MainComponent = () => {
             type="text"
             placeholder="Take Note..."
             onClick={() => setIsInputBoxOpen(true)}
-            className="w-full bg-transparent outline-none  border-gray-800 rounded-lg p-2 shadow-lg  border-2"
+            className="w-full bg-transparent outline-none rounded-lg p-2 shadow  border-2"
           />
         )}
         {isInputBoxOpen && (
           <form onSubmit={formik.handleSubmit}>
-            <div className=" shadow-lg  border-2 border-gray-800 rounded-lg p-4">
+            <div className=" shadow-lg  border-2 rounded-lg p-4">
               <input
                 name="title"
                 type="text"

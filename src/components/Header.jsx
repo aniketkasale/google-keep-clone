@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 const Header = ({ notes, setFilteredNotes }) => {
   const navigate = useNavigate();
   return (
-    <div className="flex align-middle justify-between p-2 mb-6 bg-slate-500 text-white">
+    <div className="flex align-middle justify-around p-2 mb-6 bg-gray-100 border-b-2">
       <div>logo</div>
       <div>
         <input
-          className="w-52 bg-gray-100 text-gray-800 outline-none p-1 rounded-3xl focus:w-96 duration-200"
+          className="w-52 bg-gray-200 text-gray-800 outline-none p-1 rounded-lg focus:w-96 duration-200"
           placeholder="🔍 Search notes..."
           onChange={(e) => {
             const data = filterData(e.target.value, notes);
@@ -16,7 +16,7 @@ const Header = ({ notes, setFilteredNotes }) => {
           }}
         />
       </div>
-      <ul className="flex gap-2">
+      <ul className="flex gap-4">
         <li>
           <svg
             xmlns="http://www.w3.org/2000/svg"
