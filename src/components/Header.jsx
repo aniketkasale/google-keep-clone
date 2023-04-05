@@ -5,7 +5,9 @@ const Header = ({ notes, setFilteredNotes }) => {
   const navigate = useNavigate();
   return (
     <div className="flex align-middle justify-around p-2 mb-6 bg-gray-100 border-b-2">
-      <div>logo</div>
+      <div className="flex gap-3 text-gray-600 text-xl">
+        <img src="google-keep.png" alt="logo" className="w-8" /> Keep
+      </div>
       <div>
         <input
           className="w-52 bg-gray-200 text-gray-800 outline-none p-1 rounded-lg focus:w-96 duration-200"
